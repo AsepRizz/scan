@@ -1,6 +1,6 @@
 # 🔍 AsepRecon (scan)
 
-Project ini adalah tool sederhana untuk keperluan reconnaissance dan scanning target secara otomatis. Cocok digunakan oleh pemula yang sedang belajar Cyber Security, terutama yang menggunakan Termux, Kali Linux, atau WSL.
+ini adalah tool sederhana untuk reconnaissance dan scanning target secara otomatis. Cocok digunakan oleh pemula yang sedang belajar Cyber Security, terutama yang menggunakan Termux, Kali Linux, atau WSL.
 
 ---
 
@@ -40,11 +40,18 @@ python3 up.py
 
 ---
 
-##🛠️ Fitur Utama
+####🛠️ Fitur Utama
+
 Subdomain enumeration
+
 Port scanning
+
 HTTP header grabber
+
 Web tech detection (whatweb)
+
 SQLi scanner (jika terintegrasi)
+
 Informasi akhir dalam bentuk ringkasan
 
+ ```
