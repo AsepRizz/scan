@@ -25,6 +25,7 @@ python aseprec.py
 
 ---
 
+## ⚙️ Cara Install
 ### 🔸 Kali Linux / WSL
 ```bash
 sudo apt update && sudo apt install python3 git -y
