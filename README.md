@@ -23,6 +23,8 @@ cd scan
 pip install -r requirements.txt
 python aseprec.py
 
+```
+
 ---
 
 ## ⚙️ Cara Install
@@ -33,6 +35,8 @@ git clone https://github.com/AsepRizz/scan
 cd scan
 pip3 install -r requirements.txt
 python3 up.py
+
+```
 
 ---
 
