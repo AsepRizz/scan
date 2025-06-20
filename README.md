@@ -22,16 +22,13 @@ git clone https://github.com/AsepRizz/scan
 cd scan
 pip install -r requirements.txt
 python aseprec.py
-🔸 Kali Linux / WSL
-bash
-Copy
-Edit
+### 🔸 Kali Linux / WSL
 sudo apt update && sudo apt install python3 git -y
 git clone https://github.com/AsepRizz/scan
 cd scan
 pip3 install -r requirements.txt
 python3 up.py
-🛠️ Fitur Utama
+##🛠️ Fitur Utama
 Subdomain enumeration
 
 Port scanning
@@ -43,14 +40,4 @@ Web tech detection (whatweb)
 SQLi scanner (jika terintegrasi)
 
 Informasi akhir dalam bentuk ringkasan
-
-📌 Catatan
-Gunakan di lingkungan yang legal dan etis
-
-Script ini terus dikembangkan dan disempurnakan
-
-Feedback dan kontribusi sangat diterima!
-
-⚠️ Disclaimer
-Tool ini dibuat hanya untuk edukasi. Penulis tidak bertanggung jawab atas penyalahgunaan di luar tujuan pembelajaran dan pengujian yang sah.
 
