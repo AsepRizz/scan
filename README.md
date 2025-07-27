@@ -18,6 +18,7 @@ ini adalah tool sederhana untuk reconnaissance dan scanning target secara otomat
 ### 🔸 Termux / Android
 ```bash
 pkg install python git -y
+apt install nmap
 git clone https://github.com/AsepRizz/scan
 cd scan
 pip install dnspython
