@@ -20,6 +20,8 @@ ini adalah tool sederhana untuk reconnaissance dan scanning target secara otomat
 pkg install python git -y
 git clone https://github.com/AsepRizz/scan
 cd scan
+pip install dnspython
+pip install google
 pip install -r requirements.txt
 python aseprec.py
 
