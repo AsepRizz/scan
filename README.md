@@ -38,7 +38,22 @@ sudo apt update && sudo apt install python3 git -y
 git clone https://github.com/AsepRizz/scan
 cd scan
 pip3 install -r requirements.txt
-sudo python3 up.py 
+python3 up.py 
+
+```
+
+---
+
+---
+
+## ⚙️ Cara Install
+### 🔸 Kali Linux Virtualbox
+```bash
+sudo apt update && sudo apt install python3 git -y
+git clone https://github.com/AsepRizz/scan
+cd scan
+pip3 install -r requirements.txt
+sudo python3 run.py 
 
 ```
 
@@ -60,7 +75,6 @@ Informasi akhir dalam bentuk ringkasan
 
 ---
 
-```
 ####🛠️ Cara Penggunaan
 1. Setelah instalasi selesai pilih salah satu fitur
 
