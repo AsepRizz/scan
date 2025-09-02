@@ -348,13 +348,20 @@ def cms_detector(target):
         "Laravel": ["laravel", "/vendor/laravel", "mix-manifest.json"]
     }
     protocol = detect_protocol(target)
-    try:
-        r = requests.get(f"{protocol}://{target}", timeout=8); content = r.text.lower()
-        detected = []
-        for cms, inds in cms_indicators.items():
-            for ind in inds:
-                if ind in content:
-                    detected.append(cms); break
+   try:
+    # sesuatu yang bisa error
+    r = requests.get(f"{protocol}://{target}", timeout=8)
+    content = r.text.lower()
+    detected = []
+    for cms, inds in cms_indicators.items():
+        for ind in inds:
+            if ind in content:
+                detected.append(cms)
+                break
+except Exception as e:
+    if console:
+        console.print(f"[red]Error: {str(e)}[/red]")
+    return
         except Exception as e:
         if console:
             console.print(f"[red]Error: {str(e)}[/red]")
