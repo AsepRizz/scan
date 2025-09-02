@@ -1,4 +1,4 @@
-# 🔍 AsepRecon (scan)
+# 🔍 AsepRecon (scan and exploit)
 
 ini adalah tool sederhana untuk reconnaissance dan scanning target secara otomatis. Cocok digunakan oleh pemula yang sedang belajar Cyber Security, terutama yang menggunakan Termux, Kali Linux, atau WSL.
 
