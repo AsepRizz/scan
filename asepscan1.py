@@ -3,6 +3,7 @@ import time
 import requests
 import socket
 import dns.resolver
+import shutil
 import re
 import subprocess
 import sys
