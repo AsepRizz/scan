@@ -58,3 +58,16 @@ SQLi scanner (jika terintegrasi)
 Informasi akhir dalam bentuk ringkasan
 
 ---
+
+```
+####🛠️ Cara Penggunaan
+1. Setelah instalasi selesai pilih salah satu fitur
+
+2. setelah memilih salah satu fitur masukan target dengan domain contoh: asep.com atau asep.ac.id atau asep.go.id jangan menyertakan url lengkap seperti https://asep.com
+
+3. setelah memasukan domain tunggu beberapa menit sampai hasil scan keluar secara otomatis
+
+4. setelah hasil scan keluar, klik enter untuk lanjut ke pilihan fitur lain
+
+---
+
