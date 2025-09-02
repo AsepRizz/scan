@@ -6,10 +6,11 @@ ini adalah tool sederhana untuk reconnaissance dan scanning target secara otomat
 
 ## 📁 Isi Tool
 
-| File        | Platform         | Deskripsi                            |
-|-------------|------------------|--------------------------------------|
-| `aseprec.py`| Termux / Android | Versi yang disesuaikan untuk Termux  |
-| `up.py`     | Kali Linux / WSL | Versi Linux (fitur lebih lengkap)    |
+| File        | Platform         | Deskripsi                                |
+|-------------|------------------|------------------------------------------|
+| `aseprec.py`| Termux / Android | Versi yang disesuaikan untuk Termux      |
+| `up.py`     | Kali Linux / WSL | Versi Linux (fitur lebih lengkap)        |
+| `run.py`    | Kali Linux virtualbox | (fitur lebih lengkap dan powerfull) |
 
 ---
 
