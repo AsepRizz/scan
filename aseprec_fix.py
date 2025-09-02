@@ -361,7 +361,8 @@ def cms_detector(target):
        if console: console.print(Panel.fit("\n".join([f"[green]✓ {d}[/green]" for d in detected]), title="CMS Terdeteksi", style="green")
     )
     else:
-        if console: console.print(Panel.fit(\"Tidak terdeteksi CMS populer\", title=\"CMS Detector\", style=\"yellow\"))
+       if console: console.print(Panel.fit("Tidak terdeteksi CMS populer", title="CMS Detector", style="yellow")
+    )
 
 def port_scanner(target, mode="cepat"):
     if console: console.print(f\"[yellow]⏳ Scanning port untuk [bold]{target}[/bold]...[/yellow]\")
