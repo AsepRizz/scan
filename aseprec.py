@@ -42,21 +42,21 @@ def detect_protocol(target):
     return "http"
 
 def whois_lookup(target):
-    if not check_tool("whois", "sudo apt install whois"):
+    if not check_tool("whois", "pkg install -y whois"):
         return
     console.print("[yellow]⏳ Ngecek WHOIS...[/yellow]")
     result = os.popen(f"whois {target}").read()
     console.print(Panel.fit(result, title="Hasil WHOIS", style="green"))
 
 def whatweb_scan(target):
-    if not check_tool("whatweb", "sudo apt install whatweb"):
+    if not check_tool("whatweb", "pkg install -y whatweb"):
         return
     console.print("[yellow]⏳ Ngecek WhatWeb...[/yellow]")
     result = os.popen(f"whatweb {target}").read()
     console.print(Panel.fit(result, title="Hasil WhatWeb", style="green"))
 
 def nmap_scan(target, mode="cepat"):
-    if not check_tool("nmap", "sudo apt install nmap"):
+    if not check_tool("nmap", "pkg install -y nmap"):
         return
     console.print(f"[yellow]⏳ Ngecek Nmap ({mode})...[/yellow]")
     scan_type = "-Pn -sV -T4" if mode == "lengkap" else "-Pn -T4 -F"
@@ -64,7 +64,7 @@ def nmap_scan(target, mode="cepat"):
     console.print(Panel.fit(result, title="Hasil Nmap", style="green"))
 
 def subdomain_checker(target):
-    if not check_tool("assetfinder", "go install github.com/tomnomnom/assetfinder@latest"):
+    if not check_tool("assetfinder", "go get -u github.com/tomnomnom/assetfinder"):
         return
     console.print("[yellow]⏳ Nyari subdomain...[/yellow]")
     result = os.popen(f"assetfinder --subs-only {target}").read()
@@ -72,7 +72,7 @@ def subdomain_checker(target):
     console.print(Panel.fit(panel_text, title="Subdomain", style="green"))
 
 def gobuster_scan(target):
-    if not check_tool("gobuster", "go install github.com/OJ/gobuster@latest"):
+    if not check_tool("gobuster", "go install github.com/OJ/gobuster/v3@latest"):
         return
 
     protocol = detect_protocol(target)
