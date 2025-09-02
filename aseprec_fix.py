@@ -358,11 +358,7 @@ def cms_detector(target):
     except Exception as e:
         if console: console.print(f"[red]Error: {str(e)}[/red]"); return
     if detected:
-        if console:
-    console.print(
-        Panel.fit("\n".join([f"[green]✓ {d}[/green]" for d in detected]),
-                  title="CMS Terdeteksi",
-                  style="green")
+       if console: console.print(Panel.fit("\n".join([f"[green]✓ {d}[/green]" for d in detected]), title="CMS Terdeteksi", style="green")
     )
     else:
         if console: console.print(Panel.fit(\"Tidak terdeteksi CMS populer\", title=\"CMS Detector\", style=\"yellow\"))
