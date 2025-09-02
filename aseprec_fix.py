@@ -355,34 +355,73 @@ def cms_detector(target):
             for ind in inds:
                 if ind in content:
                     detected.append(cms); break
-    except Exception as e:
-        if console: console.print(f"[red]Error: {str(e)}[/red]"); return
+        except Exception as e:
+        if console:
+            console.print(f"[red]Error: {str(e)}[/red]")
+        return
+
     if detected:
-       if console: console.print(Panel.fit("\n".join([f"[green]✓ {d}[/green]" for d in detected]), title="CMS Terdeteksi", style="green")
-    )
+        if console:
+            console.print(
+                Panel.fit(
+                    "\n".join([f"[green]✓ {d}[/green]" for d in detected]),
+                    title="CMS Terdeteksi",
+                    style="green"
+                )
+            )
     else:
-       if console: console.print(Panel.fit("Tidak terdeteksi CMS populer", title="CMS Detector", style="yellow")
-    )
+        if console:
+            console.print(
+                Panel.fit(
+                    "Tidak terdeteksi CMS populer",
+                    title="CMS Detector",
+                    style="yellow"
+                )
+            )
 
 def port_scanner(target, mode="cepat"):
-    if console: console.print(f\"[yellow]⏳ Scanning port untuk [bold]{target}[/bold]...[/yellow]\")
-    if mode == "lengkap": ports = range(1, 65536)
-    else: ports = [21,22,23,25,53,80,110,111,135,139,143,443,445,993,995,1723,3306,3389,5900,8080,8443]
+    if console:
+        console.print(f"[yellow]⏳ Scanning port untuk [bold]{target}[/bold]...[/yellow]")
+
+    if mode == "lengkap":
+        ports = range(1, 65536)
+    else:
+        ports = [21,22,23,25,53,80,110,111,135,139,143,443,445,
+                 993,995,1723,3306,3389,5900,8080,8443]
+
     open_ports = []
     with Progress() as progress:
-        task = progress.add_task(\"[cyan]Scanning port...\", total=len(list(ports)))
+        task = progress.add_task("[cyan]Scanning port...", total=len(list(ports)))
         for p in ports:
             try:
-                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM); sock.settimeout(1)
-                res = sock.connect_ex((target, int(p))); sock.close()
-                if res == 0: open_ports.append(p)
+                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                sock.settimeout(1)
+                res = sock.connect_ex((target, int(p)))
+                sock.close()
+                if res == 0:
+                    open_ports.append(p)
             except Exception:
                 pass
             progress.update(task, advance=1)
+
     if open_ports:
-        if console: console.print(Panel.fit(\"\\n\".join([f\"[green]• Port {pt} terbuka[/green]\" for pt in open_ports]), title=\"Port Terbuka\", style=\"green\"))
+        if console:
+            console.print(
+                Panel.fit(
+                    "\n".join([f"[green]• Port {pt} terbuka[/green]" for pt in open_ports]),
+                    title="Port Terbuka",
+                    style="green"
+                )
+            )
     else:
-        if console: console.print(Panel.fit(\"Tidak ada port terbuka yang ditemukan\", title=\"Port Scanner\", style=\"yellow\"))
+        if console:
+            console.print(
+                Panel.fit(
+                    "Tidak ada port terbuka yang ditemukan",
+                    title="Port Scanner",
+                    style="yellow"
+                )
+            )
 
 def banner():
     art = r\"\"\"
