@@ -31,7 +31,7 @@ REQUIRED_TOOLS = {
     "python": "pkg install python -y",
     "pip": "pkg install python-pip -y",
     "wafw00f": "pip install wafw00f",
-    "assetfinder": "go install github.com/tomnomnom/assetfinder@latest",
+    "assetfinder": "go install github.com/tomnomnom/assetfinder",
     "gobuster": "go install github.com/OJ/gobuster/v3@latest",
 }
 
