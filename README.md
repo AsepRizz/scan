@@ -21,9 +21,10 @@ untuk eksploit otomatis pakai run.py ada fitur fitur lengkap seperti sqlmap, wps
 ### 🔸 Termux / Android
 ```bash
 pkg install python git -y
-apt install nmap
+pkg install nmap -y
 git clone https://github.com/AsepRizz/scan
 cd scan
+pip install requests bs4 rich
 pip install dnspython
 pip install google
 pip install -r requirements.txt
