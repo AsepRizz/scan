@@ -7,6 +7,7 @@ import dns.resolver
 import json
 import subprocess
 import re
+import whois
 from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
