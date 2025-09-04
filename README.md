@@ -24,9 +24,9 @@ pkg install python git -y
 pkg install nmap -y
 git clone https://github.com/AsepRizz/scan
 cd scan
-pip install requests bs4 rich
+pip install requests bs4 rich mechanize
 pip install dnspython
-pip install google
+pip install googlesearch
 pip install -r requirements.txt
 python aseprec.py
 
