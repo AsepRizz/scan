@@ -3,11 +3,7 @@ colorama
 rich
 bs4
 whois
-whatweb
 futures
 stdiomask
 dnspython
-googlesearch
-
-
-
+google
