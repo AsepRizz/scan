@@ -14,7 +14,6 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.tree import Tree
 from rich import box
 from bs4 import BeautifulSoup
-import whois
 import ssl
 import cryptography
 from cryptography import x509
