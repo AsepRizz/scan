@@ -3,6 +3,7 @@ import os
 import sys
 import socket
 import requests
+import whois
 import subprocess
 import json
 import dns.resolver
