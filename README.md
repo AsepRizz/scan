@@ -22,6 +22,8 @@ untuk eksploit otomatis pakai run.py ada fitur fitur lengkap seperti sqlmap, wps
 ```bash
 pkg install python git -y
 pkg install nmap -y
+pkg install ruby
+gem install lolcat 
 git clone https://github.com/AsepRizz/scan
 cd scan
 pip install requests bs4 rich mechanize ruby
