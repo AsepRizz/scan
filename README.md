@@ -26,7 +26,7 @@ pkg install ruby
 gem install lolcat 
 git clone https://github.com/AsepRizz/scan
 cd scan
-pip install requests bs4 rich mechanize ruby
+pip install requests bs4 rich mechanize ruby whatweb
 pip install dnspython
 pip install googlesearch
 pip install -r requirements.txt
