@@ -1,8 +1,8 @@
 # 🔍 AsepRecon (scan and exploit)
 
-ini adalah tool untuk scanning dan eksploit target secara otomatis. Cocok digunakan oleh pemula yang sedang belajar Cyber Security, terutama yang menggunakan Termux, Kali Linux, atau WSL.
-untuk cara penggunaan lengkap seperti dibawah ini.
-untuk eksploit otomatis pakai run.py ada fitur fitur lengkap seperti sqlmap, wpscan, dll. saran pengguna laptop harap memakai run.py karna dibanding up.py run.py lebih powerfull. sedangkan khusus termux hanya tersedia aseprec.py saja dan untuk setiap fitur akan terinstall otomatis ketika mau dipakai, tinggal menunggu beberapa menit tergantung kecepatan koneksi internet di hp
+ini adalah tool untuk scanning dan eksploit target secara otomatis. Cocok digunakan oleh pemula yang sedang belajar Cyber Security, terutama yang menggunakan Termux, Kali Linux, atau VirutalBox.
+untuk cara penggunaan dan panduan lengkap seperti dibawah ini.
+
 
 ---
 
@@ -11,8 +11,7 @@ untuk eksploit otomatis pakai run.py ada fitur fitur lengkap seperti sqlmap, wps
 | File        | Platform         | Deskripsi                                |
 |-------------|------------------|------------------------------------------|
 | `aseprec.py`| Termux / Android | Versi yang disesuaikan untuk Termux      |
-| `up.py`     | Kali Linux / WSL | Versi Linux (fitur lebih lengkap)        |
-| `run.py`    | Kali Linux virtualbox | (fitur lebih lengkap dan powerfull) |
+| `run.py`    | Kali Linux / linux virtualbox | (fitur lebih lengkap dan powerfull) |
 
 ---
 
@@ -36,23 +35,10 @@ python aseprec.py
 
 ---
 
-## ⚙️ Cara Install
-### 🔸 Kali Linux / WSL
-```bash
-sudo apt update && sudo apt install python3 git -y
-git clone https://github.com/AsepRizz/scan
-cd scan
-pip3 install -r requirements.txt
-python3 up.py 
-
-```
-
----
-
 ---
 
 ## ⚙️ Cara Install
-### 🔸 Kali Linux Virtualbox
+### 🔸 Kali Linux / Linux Virtualbox
 ```bash
 sudo apt update && sudo apt install python3 git -y
 git clone https://github.com/AsepRizz/scan
@@ -66,15 +52,12 @@ sudo python3 run.py
 
 ####🛠️ Fitur Utama
 
-Subdomain enumeration
-
-Port scanning
-
-HTTP header grabber
-
-Web tech detection (whatweb)
-
-SQLi scanner (jika terintegrasi)
+1. Reconnaissance Tools
+2. Scanning & Enumeration
+3. Exploitation Tools
+4. Post-Exploitation
+5. Network & Additional Tools
+6. Exit
 
 Informasi akhir dalam bentuk ringkasan
 
